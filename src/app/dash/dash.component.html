@@ -1,0 +1,61 @@
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+  </div>
+
+  <div class="row">
+      <div class="col-xl-3 col-md-6 mb-4" *ngFor="let card of cards">
+<app-card [isvisible]='true' [price]="card.price" [color]="card.color" [border]="card.border" [CardTitle]="card.CardTitle" [currency]="card.currency"></app-card>
+      </div>
+      <!-- <div class="col-xl-3 col-md-6 mb-4">
+          <app-card [isvisible]='false' [color]='"text-success"' [price]='"$215,000"' [border]='"border-left-success"' CardTitle='Earnings (Annual)'></app-card>
+                  </div>
+                  <div class="col-xl-3 col-md-6 mb-4">
+                      <app-card [isvisible]='true' [color]='"text-info"' [border]='"border-left-info"' CardTitle='Tasks' [price]='"50%"'></app-card>
+                              </div>
+                              <div class="col-xl-3 col-md-6 mb-4">
+                                  <app-card [isvisible]='false' [color]='"text-warning"' [price]='"18"' [border]='"border-left-warning"' CardTitle='Pending Requests'></app-card>
+                                          </div> -->
+  </div>
+  <div>
+     <div>
+                <input type="text" [(ngModel)]="userdata">{{userdata}}
+              </div>
+    <button class="btn btn-info"(click)="addcard()">hey click me!</button>
+  </div>
+  <div>
+    <button class="btn btn-info" (click)="toggle()"><span *ngIf="show==true">Hide</span><span *ngIf="show==false">Show</span>Table</button>
+  </div>
+  <div *ngIf="show">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

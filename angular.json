@@ -21,9 +21,13 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/Images"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              
+              "src/assets/sb-admin-2.css",
               "src/styles.css"
             ],
             "scripts": []

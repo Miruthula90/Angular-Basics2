@@ -1,0 +1,49 @@
+<p>genjson works!</p>
+
+<div class="container">
+    <div class="row">
+  <div class="col-xl-8 offset-xl-2">
+        <label class="h1"> Add Product</label>
+<form formGroup="userform" style="background-color: aquamarine;">
+    <div class="row">
+
+   
+    <div class="col-lg-4">
+     <label class="h5">Title</label>   
+<input type="text" class="form-control" formControlName="title">
+    </div>
+    <div class="col-lg-4">
+            <label class="h5">Price</label>   
+            <input type="text" class="form-control" formControlName="price">
+    </div><br>
+   
+</div>
+<div class="row">
+        <div class="col-lg-12">
+                <label class="h5">Varients</label> 
+                <div class="d-flex">
+                        <input type="checkbox" class="form-control" formControlName="varients" style="height:15px;width:20px">
+                        <label>this product has multiple sizes</label>
+
+                </div>  
+        </div>
+</div>
+<div class="row">
+    <div class="col-lg-12" style="display: flexbox;flex-direction: column;">
+
+   
+<label>options</label>
+<button value="add option">Add Option</button>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12" style="display:hidden;flex-direction: row;"> 
+<label>option</label><input type="text"> <textarea></textarea>
+</div>
+</div>
+
+</form>
+  </div>
+    </div>
+</div>
+
